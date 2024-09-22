@@ -1,13 +1,63 @@
+/**************
+PALETTE
+h1: #D34370
+riquadri: #0F0E16
+email: #63CEE7
+**************/
+
+
+/*******
+RESET
+*******/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/***********
+COMMON RULES
+***********/
+
 body {
+    text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    margin: 50px 230px;
+}
+
+/***********
+HEADER RULES
+***********/
+
+header {
+
+    h1 {
+        color: #D34370;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin: 0 -10px;
+
+    .member {
+        border: solid black;
+        width: calc(100% / 3 - 20px);
+        height: 100px;
+        margin: 10px;
+    }
 }

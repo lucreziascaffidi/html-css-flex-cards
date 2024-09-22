@@ -43,9 +43,17 @@ header {
     }
 }
 
+/***********
+SUBTITLE RULES
+***********/
+
 .subtitle {
     margin-bottom: 50px;
 }
+
+/***********
+GRID RULES
+***********/
 
 .team-container {
     display: flex;
@@ -53,11 +61,35 @@ header {
     flex-direction: row;
     align-content: flex-start;
     margin: 0 -10px;
+}
 
-    .member {
-        border: solid black;
-        width: calc(100% / 3 - 20px);
-        height: 100px;
-        margin: 10px;
+.team-container .member {
+    width: calc(100% / 3 - 20px);
+    height: 100px;
+    margin: 10px;
+    box-shadow: 3px 3px 10px 2px gray;
+    display: flex;
+}
+
+.team-container .member .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    color: white;
+    background-color: #0F0E16;
+    flex-grow: 1;
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    .role {
+        text-transform: capitalize;
+    }
+
+    .email {
+        color: #63CEE7;
     }
 }

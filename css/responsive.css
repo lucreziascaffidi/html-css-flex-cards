@@ -1,3 +1,11 @@
+/**************
+PALETTE
+h1: #D34370
+riquadri: #0F0E16
+email: #63CEE7
+**************/
+
+
 /*******
 RESET
 *******/
@@ -13,10 +21,13 @@ body {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    margin: 50px 230px;
+}
+
+main {
+    width: 80%;
+    margin: 40px auto;
 }
 
 /***********
@@ -83,50 +94,15 @@ GRID RULES
     }
 }
 
-@media screen and (max-width: 480px) {
-
-    body {
-        margin: 50px 70px;
-    }
-
-    header {
-        h1 {
-            margin-bottom: 30px;
-        }
-    }
-
-    .subtitle {
-        margin-bottom: 30px;
-    }
-
-    .team-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 -10px;
-    }
-
+@media screen and (max-width: 1200px) {
     .team-container .member {
-        width: 320px;
-        height: 100px;
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .team-container .member {
+        width: calc(100% - 20px);
         margin: 10px;
-        display: flex;
     }
-
-    .team-container .member img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .team-container .member .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 20px;
-        color: white;
-        background-color: #0F0E16;
-        flex-grow: 1;
-    }
-
 }

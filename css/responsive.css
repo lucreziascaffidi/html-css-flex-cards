@@ -1,11 +1,3 @@
-/**************
-PALETTE
-h1: #D34370
-riquadri: #0F0E16
-email: #63CEE7
-**************/
-
-
 /*******
 RESET
 *******/
@@ -89,4 +81,52 @@ GRID RULES
     .email {
         color: #63CEE7;
     }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        margin: 50px 70px;
+    }
+
+    header {
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 30px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 -10px;
+    }
+
+    .team-container .member {
+        width: 320px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+    }
+
+    .team-container .member img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .team-container .member .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        color: white;
+        background-color: #0F0E16;
+        flex-grow: 1;
+    }
+
 }
